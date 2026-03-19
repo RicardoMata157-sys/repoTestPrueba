@@ -1,17 +1,19 @@
 # Payment Simulator
 
-Proyecto fullstack con **Spring Boot + React** para simular el procesamiento de pagos.
+Proyecto fullstack desarrollado con **Spring Boot y React** para simular el procesamiento de pagos.
 
-## Tecnologías usadas
+---
 
-### Backend
+# Tecnologías usadas
+
+## Backend
 - Java 21
 - Spring Boot 3
 - Spring Data JPA
 - PostgreSQL
 - Maven
 
-### Frontend
+## Frontend
 - React
 - Vite
 - Axios
@@ -19,7 +21,7 @@ Proyecto fullstack con **Spring Boot + React** para simular el procesamiento de 
 
 ---
 
-## Estructura del proyecto
+# Estructura del proyecto
 
 ```bash
 repoTestPrueba/
@@ -28,24 +30,48 @@ repoTestPrueba/
 └── README.md
 
 
-Instrucciones configura el properties para tu ambiente de desarrollo  y crea una base de datos con el nombre  payments_db en tu gestor de base de datos postgres
-spring.datasource.username=
-spring.datasource.password=
 
-Ejecuta la clase ClassMain del paquete com.mx.test.config
-deja que el backend se despleguie con exito 
+Instrucciones de configuración
 
-ejecucion del frontend 
+Configura el archivo application.properties del backend para tu ambiente de desarrollo.
 
-dirigete ala  carpeta frontent que esta en la carpeta raiz del proyecto 
+Crea una base de datos en tu gestor de PostgreSQL con el siguiente nombre:
+
+CREATE DATABASE payments_db;
+
+Posteriormente configura tus credenciales en el archivo:
+
+backend/src/main/resources/application.properties
+
+Ejemplo:
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/payments_db
+spring.datasource.username=TU_USUARIO
+spring.datasource.password=TU_PASSWORD
+Ejecución del Backend
+
+Ejecuta la clase principal:
+
+com.mx.test.config.ClassMain
+
+Una vez iniciada la aplicación, espera a que el backend se despliegue correctamente.
+
+Si todo es correcto, el backend se ejecutará en:
+
+http://localhost:8080
+Ejecución del Frontend
+
+Dirígete a la carpeta frontend ubicada en la raíz del proyecto.
+
 /pagos-test/frontend
-ejecuta los siguiente comendos en la terminal p
-npm  run dev para ejecutar el fronent y entra a la ruta 
-http://localhost:5173/
 
+Ejecuta los siguientes comandos en la terminal:
 
+npm install
+npm run dev
 
+Esto iniciará la aplicación frontend en modo desarrollo.
 
+Abre tu navegador en la siguiente dirección:
 
-
-
+http://localhost:5173
