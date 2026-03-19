@@ -1,0 +1,51 @@
+# Payment Simulator
+
+Proyecto fullstack con **Spring Boot + React** para simular el procesamiento de pagos.
+
+## Tecnologías usadas
+
+### Backend
+- Java 21
+- Spring Boot 3
+- Spring Data JPA
+- PostgreSQL
+- Maven
+
+### Frontend
+- React
+- Vite
+- Axios
+- React Router DOM
+
+---
+
+## Estructura del proyecto
+
+```bash
+repoTestPrueba/
+├── backend/
+├── frontend/
+└── README.md
+
+
+Instrucciones configura el properties para tu ambiente de desarrollo  y crea una base de datos con el nombre  payments_db en tu gestor de base de datos postgres
+spring.datasource.username=
+spring.datasource.password=
+
+Ejecuta la clase ClassMain del paquete com.mx.test.config
+deja que el backend se despleguie con exito 
+
+ejecucion del frontend 
+
+dirigete ala  carpeta frontent que esta en la carpeta raiz del proyecto 
+/pagos-test/frontend
+ejecuta los siguiente comendos en la terminal p
+npm  run dev para ejecutar el fronent y entra a la ruta 
+http://localhost:5173/
+
+
+
+
+
+
+
